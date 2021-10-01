@@ -1,4 +1,7 @@
-#  STM32MP1 port for [balenaOS](https://github.com/balena-os)
+#  [balenaOS](https://github.com/balena-os) support for stm32mp boards
+
+## Supported boards
+* QSMP-1570 on QSBASE1 (QSMP-SV57)
 
 ## Clone/Initialize the repository
 
