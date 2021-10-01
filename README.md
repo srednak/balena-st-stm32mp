@@ -3,6 +3,7 @@
 ## Supported boards
 * QSMP-1570 on QSBASE1 (QSMP-SV57)
 
+
 ## Clone/Initialize the repository
 
 There are two ways of initializing this repository:
