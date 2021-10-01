@@ -1,0 +1,13 @@
+diff --git a/include/configs/stm32mp1.h b/include/configs/stm32mp1.h
+index 32d0723d62..586e92d273 100644
+--- a/include/configs/stm32mp1.h
++++ b/include/configs/stm32mp1.h
+@@ -10,6 +10,8 @@
+ #include <linux/sizes.h>
+ #include <asm/arch/stm32.h>
+ 
++#define CONFIG_ENV_SIZE                        0x3000  /* Total Size Environment */
++
+ #ifndef CONFIG_TFABOOT
+ /* PSCI support */
+ #define CONFIG_ARMV7_SECURE_BASE		STM32_SYSRAM_BASE

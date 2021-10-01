@@ -1,0 +1,40 @@
+diff --git a/include/configs/stm32mp1.h b/include/configs/stm32mp1.h
+index 586e92d273..07e004ba2b 100644
+--- a/include/configs/stm32mp1.h
++++ b/include/configs/stm32mp1.h
+@@ -131,15 +131,7 @@
+ 	"if test ${boot_device} = serial || test ${boot_device} = usb;" \
+ 	"then stm32prog ${boot_device} ${boot_instance}; " \
+ 	"else " \
+-		"run env_check;" \
+-		"if test ${boot_device} = mmc;" \
+-		"then env set boot_targets \"mmc${boot_instance}\"; fi;" \
+-		"if test ${boot_device} = nand ||" \
+-		  " test ${boot_device} = spi-nand ;" \
+-		"then env set boot_targets ubifs0; fi;" \
+-		"if test ${boot_device} = nor;" \
+-		"then env set boot_targets mmc0; fi;" \
+-		"run distro_bootcmd;" \
++		"run boot_resin;" \
+ 	"fi;\0"
+ 
+ #include <config_distro_bootcmd.h>
+@@ -160,7 +152,17 @@
+ 	"env_check=if env info -p -d -q; then env save; fi\0" \
+ 	STM32MP_BOOTCMD \
+ 	BOOTENV \
+-	"boot_net_usb_start=true\0"
++	"boot_net_usb_start=true\0" \
++        "resin_fdt_file=" __stringify(UBOOT_DEFAULT_DEVICETREE) "\0"      \
++        "resin_kernel_image=" __stringify(KERNEL_IMAGETYPE) "\0"          \
++        "boot_resin="                                                     \
++                "setenv resin_kernel_load_addr ${kernel_addr_r};"         \
++                "run resin_set_kernel_root;"                              \
++                "load ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${fdt_addr_r} ${resin_fdt_file};"        \
++                "load ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${kernel_addr_r} ${resin_kernel_image};" \
++                "run set_os_cmdline;"                                     \
++                "setenv bootargs ${resin_kernel_root} rootwait rw ${os_cmdline};" \
++                "bootm ${kernel_addr_r} - ${fdt_addr_r};\0"
+ 
+ #endif /* ifndef CONFIG_SPL_BUILD */
+ #endif /* ifdef CONFIG_DISTRO_DEFAULTS*/

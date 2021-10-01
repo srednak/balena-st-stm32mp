@@ -1,0 +1,20 @@
+diff --git a/include/env_default.h b/include/env_default.h
+index 8a0c3057f0..d6a6461b73 100644
+--- a/include/env_default.h
++++ b/include/env_default.h
+@@ -9,6 +9,7 @@
+ 
+ #include <env_callback.h>
+ #include <linux/stringify.h>
++#include <env_resin.h>
+ 
+ #ifdef DEFAULT_ENV_INSTANCE_EMBEDDED
+ env_t embedded_environment __UBOOT_ENV_SECTION__(environment) = {
+@@ -22,6 +23,7 @@ static char default_environment[] = {
+ #else
+ const uchar default_environment[] = {
+ #endif
++    BALENA_ENV
+ #ifndef CONFIG_USE_DEFAULT_ENV_FILE
+ #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
+ 	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"
