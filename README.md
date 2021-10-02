@@ -4,4 +4,4 @@
 * QSMP-1570 on QSBASE1 (QSMP-SV57) (Only eMMC tested)
 
 ## Known issues
-* Reboot after about 20 min. Reset reason IWDG2 Reset
+* Sometimes reboot after about 20 min. Reset reason IWDG2 Reset.
