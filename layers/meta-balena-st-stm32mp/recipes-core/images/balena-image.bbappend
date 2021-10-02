@@ -59,10 +59,11 @@ device_specific_configuration() {
 }
 
 do_copy_partitions_images_to_depoly_dir () {
-    install -m 644 ${WORKDIR}/resin-boot.img ${DEPLOY_DIR}/images/${MACHINE}/resin-boot.img
-    install -m 644 ${WORKDIR}/resin-rootB.img ${DEPLOY_DIR}/images/${MACHINE}/resin-rootB.img
-    install -m 644 ${WORKDIR}/resin-state.img ${DEPLOY_DIR}/images/${MACHINE}/resin-state.img
-	ln -sf ${DEPLOY_DIR}/images/${MACHINE}/${IMAGE_BASENAME}-${MACHINE}.${BALENA_ROOT_FSTYPE} ${DEPLOY_DIR}/images/${MACHINE}/resin-rootA.img
+    install -m 644 ${WORKDIR}/resin-boot.img ${DEPLOY_DIR}/images/${MACHINE}/resin-boot-${DISTRO}-${MACHINE}.ext4
+    install -m 644 ${WORKDIR}/resin-rootB.img ${DEPLOY_DIR}/images/${MACHINE}/resin-rootB-${DISTRO}-${MACHINE}.ext4
+    install -m 644 ${WORKDIR}/resin-state.img ${DEPLOY_DIR}/images/${MACHINE}/resin-state-${DISTRO}-${MACHINE}.ext4
+    ln -sf ${DEPLOY_DIR}/images/${MACHINE}/${IMAGE_BASENAME}-${MACHINE}.${BALENA_ROOT_FSTYPE} ${DEPLOY_DIR}/images/${MACHINE}/resin-rootA-${DISTRO}-${MACHINE}.ext4
+    ln -sf ${DEPLOY_DIR}/images/${MACHINE}/resin-data.img ${DEPLOY_DIR}/images/${MACHINE}/resin-data-${DISTRO}-${MACHINE}.ext4
 }
 
 addtask copy_partitions_images_to_depoly_dir after do_image_balenaos_img before do_image_complete

@@ -44,7 +44,8 @@ OS_KERNEL_CMDLINE_append = " ${@bb.utils.contains('DEVELOPMENT_IMAGE','1', '${U_
 OS_KERNEL_CMDLINE_append = " rootfstype=ext4 "
 
 # Initramfs debugging
-#OS_KERNEL_CMDLINE_append = " debug verbose shell-debug "
+#OS_KERNEL_CMDLINE_append = " verbose shell-debug "
+OS_KERNEL_CMDLINE_append = " ${@bb.utils.contains('DEVELOPMENT_IMAGE','1', 'debug', '',d)}"
 # Initramfs shell
 #OS_KERNEL_CMDLINE_append = " shell "
 
