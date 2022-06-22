@@ -19,3 +19,6 @@
 	path = layers/meta-st-stm32mp
 	url = https://github.com/STMicroelectronics/meta-st-stm32mp
 	branch = dunfell
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/balena-io/contracts.git
