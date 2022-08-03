@@ -1,6 +1,23 @@
 # v2.99.19
 ## (2022-06-24)
 
+# v2.101.0
+## (2022-08-03)
+
+
+<details>
+<summary> Update contracts to b48eaf24e3b0cf67116e4adbe1a12d349825fda5 [renovate[bot]] </summary>
+
+> ## contracts-2.0.8
+> ### (2022-08-03)
+> 
+> * Update dotnet contract to latest v6.x and v3.x [Trong Nghia Nguyen]
+> * Add node v18.7.0 [Trong Nghia Nguyen]
+> 
+</details>
+
+* Update layers/meta-balena to c233b4107fc25b08e963e2419b40263409d2de9e [renovate[bot]]
+
 # v2.99.26+rev3
 ## (2022-07-27)
 
