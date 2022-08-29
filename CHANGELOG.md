@@ -1,6 +1,11 @@
 # v2.99.19
 ## (2022-06-24)
 
+# v2.102.1
+## (2022-08-29)
+
+* Update layers/meta-balena to 59f3caaab340bf15bf562b60e1f7315c437e1297 [renovate[bot]]
+
 # v2.102.0
 ## (2022-08-26)
 
