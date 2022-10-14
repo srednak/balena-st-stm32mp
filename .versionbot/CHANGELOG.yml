@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to 433b72275aa61da736904aa3f55c7b987824d523
+      hash: 6812138d9b4cf482499f3492b48ab04c6d69aec7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 433b72275aa61da736904aa3f55c7b987824d523
+        changelog-entry: Update layers/meta-balena to 433b72275aa61da736904aa3f55c7b987824d523
+      author: renovate[bot]
+      nested: []
+  version: 2.105.11
+  title: ""
+  date: 2022-10-14T17:41:32.606Z
+- commits:
     - subject: Update build and deploy workflow to v0.0.12
       hash: 5b9f1e9e58977366ba4ad180cf32513cba24de0a
       body: |
