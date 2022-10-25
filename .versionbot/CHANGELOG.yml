@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to ad75f015f985b1dff097568475d80c05924bfdae
+      hash: f16023d61b4f13d43a41e429b6de55d3098b7d70
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ad75f015f985b1dff097568475d80c05924bfdae
+        changelog-entry: Update layers/meta-balena to ad75f015f985b1dff097568475d80c05924bfdae
+      author: renovate[bot]
+      nested: []
+  version: 2.105.18
+  title: ""
+  date: 2022-10-25T20:44:06.518Z
+- commits:
     - subject: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
       hash: d456f409ada1a5cd8ba7d146a6d95364361cb570
       body: Update contracts
