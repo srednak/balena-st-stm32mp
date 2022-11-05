@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+      hash: 1f11153b97afec668dba738d80e83fe811c54f16
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+        changelog-entry: Update layers/meta-balena to 4f26a52c25bd3b246cc623b271873891da2fd737
+      author: renovate[bot]
+      nested: []
+  version: 2.105.27
+  title: ""
+  date: 2022-11-05T00:29:46.287Z
+- commits:
     - subject: Update layers/meta-balena to 397943469235f9eb67a55ce5c98e01e8afbc641e
       hash: 33e0ab89cf9530b3d1f63de60d0ceb515427c7ec
       body: Update layers/meta-balena
