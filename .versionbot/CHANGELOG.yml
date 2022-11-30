@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to 8ea20f929eeb3f52b23874c3bd951c961329ad29
+      hash: c24ac5801e0be76d628d17f20ead8af27918c995
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 8ea20f929eeb3f52b23874c3bd951c961329ad29
+        changelog-entry: Update layers/meta-balena to 8ea20f929eeb3f52b23874c3bd951c961329ad29
+      author: renovate[bot]
+      nested: []
+  version: 2.107.14
+  title: ""
+  date: 2022-11-30T19:03:23.574Z
+- commits:
     - subject: Update contracts to 5d83fa7ad3a0c95db49ee465c9a77845611f3a3b
       hash: d489725e508cfcb5bdc7d7ddd41fcecd61e1b954
       body: Update contracts
