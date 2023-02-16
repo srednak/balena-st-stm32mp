@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to beb261875db907bcfa9ad8604100860c362d9ebe
+      hash: 1f0e5ad990db3e6a2ccef1661f70e88539a3cde8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to beb261875db907bcfa9ad8604100860c362d9ebe
+        changelog-entry: Update layers/meta-balena to beb261875db907bcfa9ad8604100860c362d9ebe
+      author: Renovate Bot
+      nested: []
+  version: 2.112.5
+  title: ""
+  date: 2023-02-16T12:36:49.422Z
+- commits:
     - subject: Update contracts to 9b8811faee63c0884f367537d3411a8d70f0fcd0
       hash: 66d522dee0c24f787088e1ac0b89854a367775f9
       body: Update contracts
