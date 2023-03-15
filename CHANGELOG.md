@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.112.14+rev1
+## (2023-03-15)
+
+* Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6 [Renovate Bot]
+* trigger deploy builds on multi-digit revisions too [Alex Gonzalez]
+
 # v2.112.14
 ## (2023-02-22)
 

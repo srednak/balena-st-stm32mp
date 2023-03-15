@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+      hash: dc1de13ccaa0d59f75f546ded644ff0d962ca5f1
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+        changelog-entry: Update balena-yocto-scripts to 93f94ff88593966c1f417861b235e729d5192ba6
+      author: Renovate Bot
+      nested: []
+    - subject: trigger deploy builds on multi-digit revisions too
+      hash: 01d09468f5bd7c85b579190440a15ed2c87bc505
+      body: >
+        According to github action syntax [1], there is no special character
+
+        to denote a match on zero or more of the preceding character, so
+
+        replace `[0-9]?` which only matches zero or one of the preceding
+
+        characters with a `*`.
+
+
+        [1] https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+
+
+        [skip ci]
+      footer:
+        Changelog-entry: trigger deploy builds on multi-digit revisions too
+        changelog-entry: trigger deploy builds on multi-digit revisions too
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.112.14+rev1
+  title: ""
+  date: 2023-03-15T17:31:36.320Z
+- commits:
     - subject: Update layers/meta-balena to 80ca81f9e4ec9d4b2e4d21bc1cf12bd59220be5a
       hash: b43def8ed678368c6b954ad1645a016c383297b9
       body: Update layers/meta-balena
