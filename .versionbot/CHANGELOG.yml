@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-balena to 6f38c16dea7e006ee20b90a089574505fbce4a25
+      hash: 5879a5aac4f79b5b867288edd34e1a6f89185dad
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 6f38c16dea7e006ee20b90a089574505fbce4a25
+        changelog-entry: Update layers/meta-balena to 6f38c16dea7e006ee20b90a089574505fbce4a25
+      author: Renovate Bot
+      nested: []
+  version: 2.114.10
+  title: ""
+  date: 2023-04-24T15:30:57.435Z
+- commits:
     - subject: Update layers/meta-balena to e2663a747325b2cb71476fde889244ad424ec8a4
       hash: 3309e9a77217bdc25b45ad49dc4db5ed55ff8ca4
       body: Update layers/meta-balena
@@ -436,7 +448,8 @@
             - subject: "node: do not set unsafe-perm with npm 9 and newer"
               hash: c1950ce76e44b48196c44874e09c8857651bddd8
               body: >
-                The unsafe-perm config option has been dropped in npm 9, trying to set it
+                The unsafe-perm config option has been dropped in npm 9, trying
+                to set it
 
                 ends with an error and therefore fails the build. With this patch
 
@@ -690,8 +703,8 @@
             - subject: <owa5X logo> Updated owa5X logo.
               hash: 65dc08be089c25740fdc53ea86b4e8037fff600b
               body: >
-                The previous logo had some problems when show in Balena's dashboard and
-                other places.
+                The previous logo had some problems when show in Balena's
+                dashboard and other places.
               footer:
                 Change-type: patch
                 change-type: patch
@@ -3263,6 +3276,7 @@
     - subject: "workflows: Add build and deploy on release tag workflow"
 - commits:
     - body: >-
-        This workflow will launch a Jenkins build and draft deploy job when a new
+        This workflow will launch a Jenkins build and draft deploy job when a
+        new
 
         tag is made.
